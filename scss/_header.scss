@@ -1,0 +1,12 @@
+.header{
+  height: 80px;
+  background: rgb(87,109,157);
+  background: linear-gradient(180deg, rgba(87,109,157,1) 0%, rgba(218,223,234,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+   div{
+    font-size: 30px;
+  }
+}
