@@ -5,7 +5,8 @@
     <title>To-Do App</title>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script defer src="script.js"></script>
+    <script defer src="javascript/model.js"></script>
+    <script defer src="javascript/action.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -20,7 +21,7 @@
     <div class="main">
         <div class="left">
             <div class="navigation">
-                <button id="createListNames" onclick="(addNew())">Add New</button>
+                <button class="createListNames" onclick="addListParent(event, this.value)">Add New</button>
                 <div class="names"></div>
             </div>
         </div>
