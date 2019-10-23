@@ -14,30 +14,28 @@ body, html {
   width: 100%;
   height: 100%;
   font-family: 'Open Sans', sans-serif; }
-  body .container, html .container {
+  body .main, html .main {
     width: 100%;
-    height: 90%;
     background-color: #ffffff;
-    margin: 0; }
-    body .container .main, html .container .main {
-      display: flex;
-      height: calc(100% - 10px); }
-      body .container .main .left, html .container .main .left {
-        width: 30%;
-        border: 1px solid black;
-        height: 100%; }
-        body .container .main .left button, html .container .main .left button {
-          width: 100%;
-          border-radius: 0;
-          height: 40px;
-          cursor: pointer;
-          font-size: 20px; }
-        body .container .main .left .nameHolder, html .container .main .left .nameHolder {
-          width: 100%;
-          height: 50px;
-          cursor: pointer; }
-          body .container .main .left .nameHolder input, html .container .main .left .nameHolder input {
-            font-size: 25px; }
-    body .container .right, html .container .right {
-      width: 80%;
-      background-color: #dadfea; }
+    margin: 0;
+    display: flex;
+    height: calc(100% - 10px); }
+    body .main .left, html .main .left {
+      width: 30%;
+      border: 1px solid black;
+      height: 100%; }
+      body .main .left button, html .main .left button {
+        width: 100%;
+        border-radius: 0;
+        height: 40px;
+        cursor: pointer;
+        font-size: 20px; }
+      body .main .left .nameHolder, html .main .left .nameHolder {
+        width: 100%;
+        height: 50px;
+        cursor: pointer; }
+        body .main .left .nameHolder input, html .main .left .nameHolder input {
+          font-size: 25px; }
+  body .right, html .right {
+    width: 80%;
+    background-color: #dadfea; }
