@@ -23,7 +23,8 @@ body, html {
     body .main .navigation, html .main .navigation {
       width: 30%;
       border: 1px solid black;
-      height: 100%; }
+      height: 100%;
+      padding: 0 5px; }
       body .main .navigation button, html .main .navigation button {
         width: 100%;
         border-radius: 0;
@@ -31,4 +32,8 @@ body, html {
         cursor: pointer;
         font-size: 20px; }
       body .main .navigation input, html .main .navigation input {
-        font-size: 25px; }
+        font-size: 25px;
+        width: 98.5%; }
+    body .main .right-side, html .main .right-side {
+      color: blue;
+      width: 100; }

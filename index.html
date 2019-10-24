@@ -20,11 +20,32 @@
 
  <div class="main">
         <div class="navigation">
-            <button class="createListNames" onclick="addListParent(event, this.value)">Add New</button>
-            <div class="listNames"></div>
+            <input type="text" class='listName' />
+            <button class="createListNames">Add New</button>
+            <ul class="lists"></ul>
         </div>
-        <div class="children"></div>
+        <div class="right-side">
+            <div id="todoItemDiv" style="display: none;">
+                <input type="text" class="newTodoItem" />
+                <button class="createTodoNames">Add New Todo</button>
+            </div>
+        </div>
     </div>
 
 </body>
+<script>
+
+$(".createListNames").click(function() {
+    var listName = $('.listName').val();
+    addListParent(listName);
+});
+
+$(".listItem").click(function() {
+   $('#todoItemDiv').toggle(); 
+
+});
+    
+
+</script>
+
 </html>

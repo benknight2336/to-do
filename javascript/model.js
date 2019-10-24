@@ -4,8 +4,7 @@ let myList = new ListCollection();
 function ListCollection(){
     this.collection = [];
     this.add = function(listName){
-        this.collection.push(new List(listName));
-
+        return this.collection.push(new List(listName));
     };
 }
 
