@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>To-Do App</title>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script defer src="javascript/model.js"></script>
-    <script defer src="javascript/action.js"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+    <script src="javascript/model.js"></script>
+    <script src="javascript/action.js"></script>
 <!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -20,15 +20,16 @@
 
  <div class="main">
         <div class="navigation">
-            <input type="text" class='listName' />
+            <input type="text" class='newListName' />
             <button class="createListNames">Add New</button>
             <ul class="lists"></ul>
         </div>
         <div class="right-side">
-            <div id="todoItemDiv" style="display: none;">
-                <input type="text" class="newTodoItem" />
-                <button class="createTodoNames">Add New Todo</button>
+            <div id="newTodoDiv" style="display: none;">
+                <input type="text" class="newTodoName" />
+                <button class="createTodo">Add New Todo</button>
             </div>
+            <div class="todoItems"></div>
         </div>
     </div>
 
@@ -36,15 +37,15 @@
 <script>
 
 $(".createListNames").click(function() {
-    var listName = $('.listName').val();
+    $('newListName').val("");
     addListParent(listName);
 });
 
-$(".listItem").click(function() {
-   $('#todoItemDiv').toggle(); 
-
+$(".createTodo").click(function() {
+    $('newTodoName').val("");
+    addListChild(listName);
 });
-    
+
 
 </script>
 
