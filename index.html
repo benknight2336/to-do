@@ -22,7 +22,7 @@
         <div class="navigation">
             <input type="text" class='newListName' />
             <button class="createListNames">Add New</button>
-            <ul class="lists"></ul>
+            <div class="lists"></div>
         </div>
         <div class="right-side">
             <div id="newTodoDiv" style="display: none;">
@@ -37,14 +37,15 @@
 <script>
 
 $(".createListNames").click(function() {
-    $('newListName').val("");
+    let listName = $('.newListName').val();
     addListParent(listName);
+    $('.newListName').val("");
 });
 
-$(".createTodo").click(function() {
-    $('newTodoName').val("");
-    addListChild(listName);
-});
+// $(".createTodo").click(function() {
+//     $('newTodoName').val("");
+//     addListChild(listName);
+// });
 
 
 </script>
