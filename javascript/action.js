@@ -46,7 +46,6 @@ function printPage() {
                 <ul>${listMembers}</ul>
             </div>
             `)
-                    //Notes for tomorrow... I need the name of the list to stay when i hit the enter key. FurtherMore after the enter key is hit and the parent list and its name has been created, i need the child of the list to appear allowing me to edit as a part of the list.
-                    //  this is code that may come in handy later on but im not positive....
+                  
     }
 }
