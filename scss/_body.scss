@@ -11,9 +11,11 @@ body, html{
     margin: 0;
     display: flex;
     height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
 
     .navigation{
-      width: 30%;
+      width: 90%;
       border: 1px solid black;
       height: 100%;
       padding: 0 5px;
@@ -30,9 +32,15 @@ body, html{
         width: 98.5%;
       }
     }
-    .right-side{
-      color: blue;
-      width: 100;
+    ul{
+      display: flex;
+      flex-direction: column;
+
+      li{
+        margin-left: 5px;
+        list-style: none;
+      }
+
     }
   }
 }

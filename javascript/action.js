@@ -37,15 +37,35 @@ function printPage() {
         let listMembers = "";
         for (let g = 0; g < theli.collection.length; g++) {
             let liName = theli.collection[g];
-            listMembers += `<li class="member" contenteditable="true" onkeydown="editListItem(${i}, ${g}, this.innerText)" >${liName.name}</li>`
+            listMembers += `<i class="fas fa-trash-alt" onclick="delitem(${i},${g}, this)"></i></><li class="member" contenteditable="true" onkeydown="editListItem(${i}, ${g}, this.innerText)" >${liName.name}</li>`
         }
         $(".lists").append(`
-            <div>
+            <div container>
                 <span>${theli.name}</span>
                 <input type="text" class="listparent" onkeyup="addListChild(event, this.value, ${i})">
                 <ul>${listMembers}</ul>
             </div>
             `)
                   
+    }
+}
+
+function delitem(listnum, itemnum, el){
+    for(let l = 0; l <myList.collection.length; l++){
+        let goblist = myList.collection[l]; //reference to a list object
+        if(l === listnum){
+            console.log(l);
+            console.log(myList.collection[l]);
+            myList.collection[l].delete(itemnum);
+        
+            $(el).parent().fadeOut();
+            printPage();
+
+            /* for(let i = 0; i < goblist.collection.length; i++){
+                if(i === itemnum){
+                    goblist.delete(itemnum);
+                }
+            } */
+        }
     }
 }

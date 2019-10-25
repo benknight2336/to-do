@@ -19,9 +19,11 @@ body, html {
     background-color: #ffffff;
     margin: 0;
     display: flex;
-    height: calc(100% - 10px); }
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center; }
     body .main .navigation, html .main .navigation {
-      width: 30%;
+      width: 90%;
       border: 1px solid black;
       height: 100%;
       padding: 0 5px; }
@@ -34,6 +36,9 @@ body, html {
       body .main .navigation input, html .main .navigation input {
         font-size: 25px;
         width: 98.5%; }
-    body .main .right-side, html .main .right-side {
-      color: blue;
-      width: 100; }
+    body .main ul, html .main ul {
+      display: flex;
+      flex-direction: column; }
+      body .main ul li, html .main ul li {
+        margin-left: 5px;
+        list-style: none; }
