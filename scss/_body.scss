@@ -32,20 +32,29 @@ body, html{
         width: 98.5%;
       }
     }
-    ul{
+    .listMembers{
       display: flex;
+      align-items: start;
+      flex-direction: column;
 
-      li{
-        margin-left: 5px;
-        list-style: none;
-      
+      .checkbox{
+        margin-left: 50px;
+        flex: none;
+        width: 25px;
       }
-      i{
-        margin-left: 10px;
+
+      .listMember{
+        display: flex;
+
       
-      }
-      .member{
-        // margin: 5px;
+        .listMemberName{
+          margin-left: 5px;
+          
+        }
+        i{
+          margin-left: 10px;
+        
+        }
       }
 
     }

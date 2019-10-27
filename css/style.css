@@ -36,10 +36,17 @@ body, html {
       body .main .navigation input, html .main .navigation input {
         font-size: 25px;
         width: 98.5%; }
-    body .main ul, html .main ul {
-      display: flex; }
-      body .main ul li, html .main ul li {
-        margin-left: 5px;
-        list-style: none; }
-      body .main ul i, html .main ul i {
-        margin-left: 10px; }
+    body .main .listMembers, html .main .listMembers {
+      display: flex;
+      align-items: start;
+      flex-direction: column; }
+      body .main .listMembers .checkbox, html .main .listMembers .checkbox {
+        margin-left: 50px;
+        flex: none;
+        width: 25px; }
+      body .main .listMembers .listMember, html .main .listMembers .listMember {
+        display: flex; }
+        body .main .listMembers .listMember .listMemberName, html .main .listMembers .listMember .listMemberName {
+          margin-left: 5px; }
+        body .main .listMembers .listMember i, html .main .listMembers .listMember i {
+          margin-left: 10px; }
