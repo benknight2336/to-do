@@ -37,12 +37,17 @@ function printPage() {
         let listMembers = "";
         for (let g = 0; g < theli.collection.length; g++) {
             let liName = theli.collection[g];
-            listMembers += `<i class="fas fa-trash-alt" onclick="delitem(${i},${g}, this)"></i></><li class="member" contenteditable="true" onkeydown="editListItem(${i}, ${g}, this.innerText)" >${liName.name}</li>`
+            listMembers += `
+                <i class="fas fa-trash-alt" onclick="delitem(${i},${g}, this)"></i>
+                <li class="member" contenteditable="true" onkeydown="editListItem(${i}, ${g}, this.innerHTML)"
+                <input type="checkbox"/>
+                ${liName.name}
+                </li>`
         }
         $(".lists").append(`
             <div container>
                 <span>${theli.name}</span>
-                <input type="text" class="listparent" onkeyup="addListChild(event, this.value, ${i})">
+                <input type="text" class="listparent" contenteditable="true" onkeyup="addListChild(event, this.value, ${i})">
                 <ul>${listMembers}</ul>
             </div>
             `)

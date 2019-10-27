@@ -34,11 +34,18 @@ body, html{
     }
     ul{
       display: flex;
-      flex-direction: column;
 
       li{
         margin-left: 5px;
         list-style: none;
+      
+      }
+      i{
+        margin-left: 10px;
+      
+      }
+      .member{
+        // margin: 5px;
       }
 
     }

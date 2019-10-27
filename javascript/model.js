@@ -6,6 +6,8 @@ function ListCollection(){
     this.add = function(listName){
         return this.collection.push(new List(listName));
     };
+    
+    localStorage.setItem("name", "color");
 }
 
 function List(name){
@@ -24,3 +26,4 @@ function ListItem(name, color){
     this.name = name;
     this.color = color;
 }
+

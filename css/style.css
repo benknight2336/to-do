@@ -37,8 +37,9 @@ body, html {
         font-size: 25px;
         width: 98.5%; }
     body .main ul, html .main ul {
-      display: flex;
-      flex-direction: column; }
+      display: flex; }
       body .main ul li, html .main ul li {
         margin-left: 5px;
         list-style: none; }
+      body .main ul i, html .main ul i {
+        margin-left: 10px; }
